@@ -1,0 +1,92 @@
+@import 'variable';
+.menuSection{
+    padding: 16px;
+    
+}
+.MenuHeading{
+  text-align: center;
+   color: $primary ;
+   margin: 1rem 0rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+.BurgertItem{
+ 
+    
+    width: 30%;
+    background-color: $light1;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0,0,0, 0.495);
+
+    
+    >h4{
+     background-color: $primary;
+     height: 2rem;
+     color: $denger;
+     display: flex;
+     align-items: center;
+     padding: 5px;
+     border-radius: 20px 20px 0 0;
+     padding-left: 15px;        
+    }
+}
+.Item{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   padding: 2rem;
+    >img{
+        height: 15rem;
+        width: 100%;
+        object-fit: contain;
+
+    }
+    >h6{
+        font-size: 1.10rem;
+        padding: 0.40rem;
+        color: $primary;
+    }
+    >h5{
+        font-size: 1.10rem;
+         padding-bottom: 0.30rem;
+         color: $primary;
+    }
+    >button{
+        width: 100%;
+        padding: 4px 4px;
+        border: none;
+        background-color: $primary;
+        border-radius: 10px;
+        color: $denger;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: $hover;
+            color: $light;
+        }
+    }
+}
+
+@media(max-width:980px){
+    .BurgertItem{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .menu{
+        flex-direction: column;
+    }
+    .BurgertItem{
+        width: 80%;
+    }
+}

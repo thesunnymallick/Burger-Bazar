@@ -1,0 +1,38 @@
+@import 'variable';
+.Login-section{
+    width: 100%;
+    height: 70vh;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.80rem 2rem;
+        font-size: 1.20rem;
+        color: $primary;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px;
+        background-color: white;
+        border: 1px solid black;
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 1px 5px rgb(0,0, 0, 0.699);
+        &:hover{
+            transform: scale(1.1);
+           
+        }
+
+        >img{
+            margin-left: 3px;
+            height: 20px;
+        }
+    }
+}

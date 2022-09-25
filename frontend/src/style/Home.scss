@@ -1,0 +1,75 @@
+@import "variable.scss";
+
+.HomeSection{
+    padding: 2rem;
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div{
+        flex: 1;
+        margin-left: 3rem;
+        >h6{
+            font-size: 1.50vw;
+        
+            margin-top: 1rem;
+           color: $secondary;
+          
+        }
+        >h3{
+            font-size: 4vw;
+          
+            color:$primary;
+            font-family: $font3;
+        }
+        >button{
+     
+            
+            background-color:$secondary; /* Green */
+            border: none;
+            padding: 1vh 4vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            >a{
+              text-decoration: none;
+              color:$denger;
+              font-size: 1.05rem;
+              font-family: $font4;
+            }
+            &:hover{
+             background-color: $hover;
+            }
+        }
+
+        >img{
+            width: 40vw;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .Home{
+    
+         flex-direction: column-reverse;
+         div{
+            margin: 0px;
+            text-align: center;
+
+            >h6{
+           font-size: 1rem;
+            }
+            >h3{
+           font-size: 2rem;
+            }
+         }
+    }
+}

@@ -1,0 +1,62 @@
+@import 'variable';
+
+.founder-section{
+    background-color: $primary;
+    width: 100%;
+    height: 80vh;
+
+    >div{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin-top: 1rem;
+      scrollbar-width: none;
+      text-align: center;
+      margin: auto;
+      
+    
+        >img{
+           
+       
+            width: 20vw;
+            border-radius: 100%;
+          
+            
+        }
+        >h2{
+         color: $denger;
+         margin: 0.50vw 0rem;
+            font-size: 2.30vw;
+         
+         font-family: $font3;
+
+        }
+        >p{
+         
+        font-size: 1.40vw;
+         color: $denger1;
+         font-family: $font2;
+        
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .founder-section{
+        >div{
+            >img{
+                width: 40vw;
+            }
+            h2{
+                font-size: 4vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+}
